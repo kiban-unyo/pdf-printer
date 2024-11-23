@@ -1,0 +1,24 @@
+{
+  "actions": [
+    {
+      "name": "印刷",
+      "type": "shell",
+      "parameters": [
+        {
+          "name": "ファイルパス",
+          "type": "string"
+        }
+      ],
+      "response": [
+        {
+          "name": "result",
+          "type": "string"
+        }
+      ],
+      "commandline": [
+        "PrintPDF.bat %1"
+      ]
+    }
+  ],
+  "name": "PDF印刷"
+}
