@@ -170,7 +170,7 @@
                 "version":0
               },
               "gizmo":{
-                "comment": { "string": "" }
+                "comment": { "string": "実行する前に、ファイルパスを設定してください。" }
               }
             },
             "expression": {
@@ -179,7 +179,7 @@
                 "version":1
               },
               "gizmo":{
-                "text": { "string": "C:\\Users\\oishi\\Desktop\\rpa.pdf" },
+                "text": { "string": "" },
                 "comment": {
                   "meta":{
                     "className":"Comment",
@@ -542,6 +542,93 @@
                                                             }
                                                           }
                                                         }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "meta":{
+                                                    "className":"DasFieldValue",
+                                                    "version":0
+                                                  },
+                                                  "gizmo":{
+                                                    "name": { "string": "Screen Size" },
+                                                    "value": {
+                                                      "meta":{
+                                                        "className":"RecordDasValue",
+                                                        "version":0
+                                                      },
+                                                      "gizmo":{
+                                                        "values": [{
+                                                          "meta":{
+                                                            "className":"DasFieldValue",
+                                                            "version":0
+                                                          },
+                                                          "gizmo":{
+                                                            "name": { "string": "Width" },
+                                                            "value": {
+                                                              "meta":{
+                                                                "className":"ExpressionDasValue",
+                                                                "version":0
+                                                              },
+                                                              "gizmo":{
+                                                                "expression": {
+                                                                  "meta":{
+                                                                    "className":"Expression",
+                                                                    "version":1
+                                                                  },
+                                                                  "gizmo":{
+                                                                    "text": { "string": "1420" },
+                                                                    "comment": {
+                                                                      "meta":{
+                                                                        "className":"Comment",
+                                                                        "version":0
+                                                                      },
+                                                                      "gizmo":{
+                                                                        "comment": { "string": "" }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        {
+                                                          "meta":{
+                                                            "className":"DasFieldValue",
+                                                            "version":0
+                                                          },
+                                                          "gizmo":{
+                                                            "name": { "string": "Height" },
+                                                            "value": {
+                                                              "meta":{
+                                                                "className":"ExpressionDasValue",
+                                                                "version":0
+                                                              },
+                                                              "gizmo":{
+                                                                "expression": {
+                                                                  "meta":{
+                                                                    "className":"Expression",
+                                                                    "version":1
+                                                                  },
+                                                                  "gizmo":{
+                                                                    "text": { "string": "900" },
+                                                                    "comment": {
+                                                                      "meta":{
+                                                                        "className":"Comment",
+                                                                        "version":0
+                                                                      },
+                                                                      "gizmo":{
+                                                                        "comment": { "string": "" }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }]
                                                       }
                                                     }
                                                   }
@@ -3224,7 +3311,7 @@
                 "version":0
               },
               "gizmo":{
-                "comment": { "string": "" }
+                "comment": { "string": "PDF出力（ダウンロード）を待機するために投入しているアクションです。\nダウンロードに時間がかかる場合などに、有効ですが、デバッグモードで実行する時には注意が必要です。\n既にダウンロードが終了した状態でこのステップに入ってしまうと、ダウンロード中の処理がキャッチできずに延々と「待ち」状態が続いてしまいます。\n" }
               }
             },
             "config": {
